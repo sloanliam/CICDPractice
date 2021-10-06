@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./cicdpractice
     - name: Build
-      run: ./cicdpractice dotnet build --no-restore
+      run: dotnet build --no-restore ./cicdpractice 
     - name: Test
-      run: ./test dotnet test --no-build --verbosity normal
+      run: dotnet test ./test --no-build --verbosity normal
