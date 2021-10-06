@@ -10,7 +10,7 @@ namespace testing
         public void AddTest()
         {
             Calculator c = new Calculator();
-            int expected = 5;
+            int expected = 4;
             Assert.Equal(c.Add(2, 2), expected);
         }
 
